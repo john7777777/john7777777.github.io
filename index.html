@@ -1,0 +1,128 @@
+<! html comment>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Programming Notes</title>
+        <style>
+
+        /*applies attribute to specific tags
+          font size 3em, means 3 times as big as body font size*/
+        h2 {
+            color: red;
+            font-size: 3em;
+        }
+
+        body {
+            background-color: rgb(0,155,255);
+            font-size: 12px;
+        }
+
+        /*applies attribute to specific id tag*/
+        #special-id {
+            background-color: red;
+            font-family: "impact";
+            font-weight: bold;  /*or font-style: italic; */
+            font-size: 15px;
+                /* shortcut: font: italic 15px impact; */
+        }
+
+        /*applies attribute to tags with class*/
+        .special-class {
+            background-color: yellow;
+        }
+
+        /*"specific font", backup general font incase system doesn't have it*/
+        table {
+            font-family: "times new roman", fantasy;
+        }
+
+        p {
+            line-height: 30px;  /* or 2em; = makes line hieght 200% of text size */
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #link-bookmark {
+            text-decoration: none; /*removes underline from link */
+        }
+
+        </style>
+    </head>
+    <body>
+
+    <h2> skip to <a href="#page-bookmark">this</a> part of the webpage.
+
+    <h1>BIG HEADER 3</h1>
+    <p>This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.  This is a paragraph.</p>
+
+    <h3 class="special-class">Little Header</h3>
+
+    <h3>UNORDERED LIST:</h3>
+    <ul id="special-id">
+        <li>bullet 1</li>
+        <li>bullet 2</li>
+        <li>bullet 3</li>
+    </ul>
+
+    <h3>ORDERED LIST:</h3>
+    <ol>
+        <li>number 1</li>
+        <li>number 2</li>
+        <li>number 3</li>
+    </ol>
+
+    <h3>Picture</h3>
+    <img src="https://www.protexinvet.com/userfiles/image/cute-2500929_1920_(1).jpg" alt="alternate image name" width="200" height="200">
+
+    <h2 id="page-bookmark" class="special-class">CSS = Cascading Style Sheets</h2>
+
+    <!-- target="_blank" causes the link to open up in new window -->
+    This is a <a id="link-bookmark" target="_blank" href="http://www.bunnies.com">link</a> to something.<br><br>
+
+    Link inside the picture.<br>
+    <a target="_blank" href="http://www.bunnies.com">
+    <img src="https://www.protexinvet.com/userfiles/image/cute-2500929_1920_(1).jpg" alt="alternate image name" width="125" height="125">
+    </a>
+
+    <h1>MAKING A TABLE</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Colors</th>
+                <th>Numbers</th>
+                <th>Letters</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Purple</td>
+                <td>One</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Blue</td>
+                <td>Two</td>
+                <td>C</td>
+            <tr>
+                <td>Red</td>
+                <td>Three</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>Green</td>
+                <td>Four</td>
+                <td>E</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>Five</td>
+                <td>F</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+
+    </body>
+</html>
